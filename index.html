@@ -1,0 +1,297 @@
+---
+layout: null
+title: The Yes-Man Syndrome
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents">
+    <title>The Yes-Man Syndrome</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650;9..144,780&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero__eyebrow">Embodied AI Abstention Benchmark</div>
+        <h1>The Yes-Man Syndrome:<br>Benchmarking Abstention in Embodied Robotic Agents</h1>
+        <div class="authors" aria-label="Paper authors">
+          <article>
+            <h2>Doguhan Yeke<sup>*</sup></h2>
+            <p>Purdue University</p>
+          </article>
+          <article>
+            <h2>Elif Su Temirel<sup>*&dagger;</sup></h2>
+            <p>Bilkent University</p>
+          </article>
+          <article>
+            <h2>Ananth Shreekumar<sup>*</sup></h2>
+            <p>Purdue University</p>
+          </article>
+          <article>
+            <h2>Brandon Lee</h2>
+            <p>Purdue University</p>
+          </article>
+          <article>
+            <h2>Dongyan Xu</h2>
+            <p>Purdue University</p>
+          </article>
+          <article>
+            <h2>Z. Berkay Celik</h2>
+            <p>Purdue University</p>
+          </article>
+        </div>
+        <p class="author-note"><sup>*</sup>Equal contribution &middot; <sup>&dagger;</sup>Work performed while an intern at Purdue University</p>
+        <div class="actions" aria-label="Project links">
+          <a class="button button--primary" href="#" aria-label="ArXiv link placeholder">ArXiv</a>
+          <a class="button button--primary" href="#" aria-label="Dataset link placeholder">Dataset</a>
+          <a class="button button--primary" href="#" aria-label="Code link placeholder">Code</a>
+          <a class="button button--ghost" href="#examples">View Examples</a>
+          <a class="button button--ghost" href="#cite">BibTeX</a>
+        </div>
+      </section>
+
+      <section class="abstract-section" aria-labelledby="abstract-heading">
+        <details class="abstract-card">
+          <summary id="abstract-heading">
+            <span>Abstract</span>
+            <strong aria-hidden="true"></strong>
+          </summary>
+          <div class="abstract-card__content">
+            <p>
+              Vision-language models (VLMs) are used as high-level planners for embodied agents, translating natural language
+              instructions and visual observations into actions. While prior work has studied abstention in large language models
+              (LLMs), existing benchmarks are limited to text-only settings and do not capture the perceptual grounding and physical
+              constraints inherent to embodied robotics environments. In such settings, abstention requires recognizing when
+              instructions are ambiguous, physically infeasible, based on false premises, or otherwise unresolvable given the
+              available sensory input modalities and context.
+            </p>
+            <p>
+              To address this gap, we introduce a taxonomy to categorize abstention in the context of embodied robotics and
+              instantiate it with a scalable and auditable framework for generating abstention instructions grounded in images
+              gathered from five robotics datasets. Our approach decomposes the generation into three phases: (1) structured visual
+              grounding, (2) deterministic constraint derivation, and (3) controlled instruction generation via category-specific
+              templates. This enables the construction of a diverse dataset with verifiable abstention conditions.
+            </p>
+            <p>
+              We evaluate several frontier vision-language models and find that all models exhibit significant weaknesses in
+              abstention, including those with advanced reasoning capabilities. The best-performing model, Gemini 2.5 Flash,
+              abstains on only 39.0% of our 6,069 benchmark instructions, while the embodied planner Gemini Robotics ER 1.6 abstains
+              on just 16.5%. We further explore methods for improving abstention in VLM planners, such as defensive prompting and
+              in-context learning, and find that these interventions substantially improve performance, reaching 93.6% abstention
+              rate for Gemini Robotics ER 1.6 and 88.6% for GPT-5.4 Mini, yet no approach fully solves the problem.
+            </p>
+          </div>
+        </details>
+      </section>
+
+      <section class="figure-section" aria-labelledby="system-overview">
+        <div class="section-heading">
+          <h2 id="system-overview">A Three-Phase Pipeline for Visually Grounded Abstention Instructions</h2>
+          <span>Overview</span>
+        </div>
+        <figure class="system-card">
+          <img src="{{ '/assets/images/system_figure.png' | relative_url }}" alt="Overview of the RoboAbstention dataset creation and evaluation pipeline">
+          <figcaption>
+            The benchmark instantiates eight abstention categories from embodied robotics images using structured visual grounding,
+            deterministic constraint derivation, and controlled instruction generation.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="summary">
+        <article>
+          <h2>Why Abstention?</h2>
+          <p>
+            Robots should not blindly execute instructions when the request is ambiguous, impossible, based on a false premise,
+            underspecified, preference-dependent, contradictory, or outside the robot's capabilities. This project evaluates when
+            VLM planners ask for clarification or acknowledge uncertainty instead of acting as yes-men.
+          </p>
+        </article>
+        <article>
+          <h2>Benchmark Scope</h2>
+          <p>
+            The benchmark focuses on benign embodied instructions that require abstention because the visual scene or robot
+            capabilities make execution unresolved. It is distinct from refusal settings such as jailbreaks or unsafe requests.
+          </p>
+        </article>
+      </section>
+
+      <section id="examples" class="examples" aria-labelledby="examples-heading">
+        <div class="section-heading">
+          <h2 id="examples-heading">Representative Abstention Scenarios</h2>
+          <span>Example Scenes</span>
+        </div>
+        <div class="example-grid">
+          <article class="example-card">
+            <img src="{{ '/assets/images/54_frame_75.png' | relative_url }}" alt="DROID robot manipulation scene">
+            <div class="example-card__body">
+              <p class="placeholder">Put the keyboard inside the cup</p>
+              <p class="tag"><span>Physical Infeasibility</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/bridge_0000.png' | relative_url }}" alt="BridgeV2 robot manipulation scene">
+            <div class="example-card__body">
+              <p class="placeholder">Move the wooden block to the edge of the table</p>
+              <p class="tag"><span>Ambiguous Referent</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/Object_existence_003.jpg' | relative_url }}" alt="EgoThink egocentric scene">
+            <div class="example-card__body">
+              <p class="placeholder">Give me the rubber duck</p>
+              <p class="tag"><span>Missing Referent</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/241-fractal20220817_data_pick_coke_can_from_top_shelf_of_fridge_5226_q39.png' | relative_url }}" alt="Robo2VLM kitchen scene">
+            <div class="example-card__body">
+              <p class="placeholder">Hand me my favorite drink</p>
+              <p class="tag"><span>Subjective Intent</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/17064247449796935974.png' | relative_url }}" alt="RoboVQA embodied scene">
+            <div class="example-card__body">
+              <p class="placeholder">Does the orange smell bad?</p>
+              <p class="tag"><span>Missing Capability</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/429_droid_ep29.png' | relative_url }}" alt="DROID robot scene">
+            <div class="example-card__body">
+              <p class="placeholder">Move that over there</p>
+              <p class="tag"><span>Underspecified Intent</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/Forecasting_019.jpg' | relative_url }}" alt="EgoThink scene">
+            <div class="example-card__body">
+              <p class="placeholder">Turn off the tap</p>
+              <p class="tag"><span>False Premise</span></p>
+            </div>
+          </article>
+
+          <article class="example-card">
+            <img src="{{ '/assets/images/10000407733199846090.png' | relative_url }}" alt="RoboVQA embodied scene">
+            <div class="example-card__body">
+              <p class="placeholder">Give me the white bowl without touching it</p>
+              <p class="tag"><span>Contradictory</span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="citation" aria-labelledby="cite">
+        <div class="section-heading">
+          <h2 id="cite">Cite This Work</h2>
+          <span>Citation</span>
+        </div>
+        <div class="citation-box">
+          <button class="copy-button" type="button" data-copy-target="bibtex">Copy</button>
+          <pre id="bibtex"><code>@article{yeke2026roboabstention,
+  title={The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents},
+  author={Doguhan Yeke and Elif Su Temirel and Ananth Shreekumar and Brandon Lee and Dongyan Xu and Z Berkay Celik},
+  journal={arXiv preprint arXiv:xxxx.xxxx},
+  year={2026}
+}</code></pre>
+        </div>
+      </section>
+
+      <footer class="funding-note" aria-label="Funding and support">
+        <p>
+          This work was partially supported by the National Science Foundation (NSF) under grants CNS-2144645 and
+          IIS-2229876, including an NSF CAREER Award, and by the AI Institute for Agent-based Cyber Threat Intelligence
+          and Operation (ACTION). This work demonstrates the Globally Accessible Test Environment (GATE), a testbed
+          developed to conduct experiments and evaluate ACTION Institute research in realistic settings.
+        </p>
+        <div class="sponsor-logos" aria-label="Sponsor logos">
+          <a href="https://www.cerias.purdue.edu/" aria-label="Visit CERIAS">
+            <img src="{{ '/assets/images/logos/cerias.png' | relative_url }}" alt="CERIAS logo">
+          </a>
+          <a href="https://action.ucsb.edu/" aria-label="Visit ACTION Institute">
+            <img src="{{ '/assets/images/logos/action.svg' | relative_url }}" alt="ACTION Institute logo">
+          </a>
+          <a href="https://pursec.cs.purdue.edu/" aria-label="Visit PurSec Lab">
+            <img src="{{ '/assets/images/logos/pursec.png' | relative_url }}" alt="PurSec logo">
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script>
+      const abstractCard = document.querySelector(".abstract-card");
+      if (abstractCard) {
+        const summary = abstractCard.querySelector("summary");
+        const content = abstractCard.querySelector(".abstract-card__content");
+        let animation = null;
+
+        summary.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          if (animation) {
+            animation.cancel();
+          }
+
+          const isOpen = abstractCard.open;
+          if (!isOpen) {
+            abstractCard.open = true;
+          }
+
+          const startHeight = isOpen ? content.offsetHeight : 0;
+          const endHeight = isOpen ? 0 : content.scrollHeight;
+
+          content.style.display = "block";
+          content.style.height = `${startHeight}px`;
+          content.style.opacity = isOpen ? "1" : "0";
+
+          animation = content.animate(
+            [
+              { height: `${startHeight}px`, opacity: isOpen ? 1 : 0 },
+              { height: `${endHeight}px`, opacity: isOpen ? 0 : 1 }
+            ],
+            { duration: 180, easing: "cubic-bezier(0.33, 1, 0.68, 1)" }
+          );
+
+          animation.onfinish = () => {
+            if (isOpen) {
+              abstractCard.open = false;
+              content.style.display = "";
+            }
+            content.style.height = "";
+            content.style.opacity = "";
+            animation = null;
+          };
+        });
+      }
+
+      document.querySelectorAll("[data-copy-target]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          const text = target ? target.innerText.trim() : "";
+
+          try {
+            await navigator.clipboard.writeText(text);
+            button.textContent = "Copied";
+            setTimeout(() => {
+              button.textContent = "Copy";
+            }, 1600);
+          } catch {
+            button.textContent = "Select text";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

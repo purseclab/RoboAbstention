@@ -1,0 +1,9 @@
+title: The Yes-Man Syndrome
+description: Benchmarking abstention in embodied robotic agents.
+url: ""
+baseurl: ""
+
+plugins: []
+
+exclude:
+  - README.md
