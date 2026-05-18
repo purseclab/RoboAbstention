@@ -133,6 +133,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 46px;
   padding: 0 20px;
   border: 1px solid var(--line);
@@ -141,6 +142,12 @@ h1 {
   font-weight: 800;
   text-decoration: none;
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.button__icon {
+  width: 1.12em;
+  height: 1.12em;
+  flex: 0 0 auto;
 }
 
 .button:hover {
@@ -283,15 +290,54 @@ h1 {
   line-height: 1.6;
 }
 
-.summary {
+.benchmark-stats {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  max-width: 980px;
+  margin: 28px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 250, 240, 0.82);
+  box-shadow: 0 16px 38px rgba(42, 38, 23, 0.09);
 }
 
-.summary article {
-  min-height: 220px;
-  padding: 28px;
+.benchmark-stats div {
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.benchmark-stats div + div {
+  border-left: 1px solid var(--line);
+}
+
+.benchmark-stats dt {
+  color: var(--clay);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.benchmark-stats dd {
+  margin: 7px 0 0;
+  color: var(--ink);
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+  font-weight: 780;
+  letter-spacing: -0.035em;
+}
+
+.summary {
+  padding: 38px 0;
+}
+
+.summary__body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  padding: 30px;
   border: 1px solid var(--line);
   border-radius: 28px;
   background: rgba(255, 250, 240, 0.82);
@@ -302,6 +348,10 @@ h1 {
 .example-card p {
   color: var(--muted);
   line-height: 1.65;
+}
+
+.summary p {
+  margin: 0;
 }
 
 .example-grid {
@@ -463,8 +513,20 @@ h1 {
 
 @media (max-width: 900px) {
   .section-heading,
-  .summary {
+  .summary__body {
     grid-template-columns: 1fr;
+  }
+
+  .benchmark-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benchmark-stats div:nth-child(3) {
+    border-left: 0;
+  }
+
+  .benchmark-stats div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
   }
 
   .example-grid {
@@ -497,8 +559,17 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .benchmark-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .benchmark-stats div + div {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .system-card,
-  .summary article,
+  .summary__body,
   .example-card {
     border-radius: 22px;
   }

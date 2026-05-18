@@ -1,0 +1,57 @@
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+
+# Datasets and generated outputs
+data/
+data_orig/
+data_sample/
+output/
+results_template/
+results_typed_grammar/
+archive/
+
+# macOS / filesystem metadata
+.DS_Store
+**/.DS_Store
+._*
+
+# Python caches and test artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.envrc
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Notebook / editor artifacts
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp

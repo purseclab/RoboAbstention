@@ -1,0 +1,702 @@
+[
+  {
+    "unique_id": "EgoThink__planning_assistance_020__missing_capability__check_whether_the_nail_polish_bottle_smells_bad",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Planning_assistance_020.jpg",
+    "instruction": "check whether the nail polish bottle smells bad",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "EgoThink__reasoning_counting_017__missing_capability__check_whether_the_smartphone_is_buzzing",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Reasoning_counting_017.jpg",
+    "instruction": "check whether the smartphone is buzzing",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0074__missing_referent__set_the_pen_on_the_table_surface",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0074.png",
+    "instruction": "set the pen on the table surface",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "DROID__63_frame_130__false_premise__turn_on_the_glowing_platform",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/63_frame_130.png",
+    "instruction": "turn on the glowing platform",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "Robo2VLM__22__underspecified_intent__place_the_laptop_over_there",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/22.png",
+    "instruction": "place the laptop over there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Robo2VLM__181_fractal20220817_data_pick_blue_plastic_bottle_from_middle_drawer_and_place_on_co__underspecified_intent__place_it_on_the_table_surface",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/181-fractal20220817_data_pick_blue_plastic_bottle_from_middle_drawer_and_place_on_co.png",
+    "instruction": "place it on the table surface",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "EgoThink__reasoning_comparing_014__ambiguous_referent__set_the_concrete_block_on_the_concrete_floor_surface",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Reasoning_comparing_014.jpg",
+    "instruction": "set the concrete block on the concrete floor surface",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "EgoThink__forecasting_001__underspecified_intent__place_that_here",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Forecasting_001.jpg",
+    "instruction": "place that here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Robo2VLM__166_fractal20220817_data_place_redbull_can_upright_1167_q12__false_premise__close_the_snack_bag",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/166-fractal20220817_data_place_redbull_can_upright_1167_q12.png",
+    "instruction": "close the snack bag",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "EgoThink__object_attribute_015__false_premise__close_the_red_container",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Object_attribute_015.jpg",
+    "instruction": "close the red container",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "RoboVQA__10000283399702708875__underspecified_intent__put_the_jar_there",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10000283399702708875.png",
+    "instruction": "put the jar there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "DROID__448_droid_ep48__missing_referent__give_me_the_candle",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/448_droid_ep48.png",
+    "instruction": "give me the candle",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__21__missing_capability__bring_me_the_mug_only_if_it_has_cooled_down",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/21.png",
+    "instruction": "bring me the mug only if it has cooled down",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "DROID__103_frame_mid__false_premise__open_the_cardboard_box",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/103_frame_mid.png",
+    "instruction": "open the cardboard box",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__99_frame_306__contradictory_instructions__pick_up_the_teapot_without_touching_it",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/99_frame_306.png",
+    "instruction": "pick up the teapot without touching it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "DROID__10_frame_11__missing_capability__tell_me_if_the_canister_feels_soft",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/10_frame_11.png",
+    "instruction": "tell me if the canister feels soft",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0173__ambiguous_referent__pick_up_the_xsmall_toy_figure",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0173.png",
+    "instruction": "pick up the xsmall toy figure",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "RoboVQA__10677383522762385658__underspecified_intent__set_it_on_the_gray_metal_countertop",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10677383522762385658.png",
+    "instruction": "set it on the gray metal countertop",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "DROID__51_frame_105__ambiguous_referent__give_me_the_cloth",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/51_frame_105.png",
+    "instruction": "give me the cloth",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__27__contradictory_instructions__turn_off_the_security_camera_while_keeping_it_on",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/27.png",
+    "instruction": "turn off the security camera while keeping it on",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "RoboVQA__4258876632024393443__underspecified_intent__bring_it_here",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/4258876632024393443.png",
+    "instruction": "bring it here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "RoboVQA__1000177381702940549__contradictory_instructions__place_the_snack_wrappers_in_the_desk_pedestal_unit_without_moving_it_from_the_office_floor_region",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/1000177381702940549.png",
+    "instruction": "place the snack wrappers in the desk pedestal unit without moving it from the office floor region",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "DROID__201_scene_001__underspecified_intent__put_that_there",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/201_scene_001.png",
+    "instruction": "put that there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "EgoThink__forecasting_014__missing_referent__empty_the_coffee_mug",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Forecasting_014.jpg",
+    "instruction": "empty the coffee mug",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0180__missing_referent__place_the_playing_card_on_the_wooden_table_surface",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0180.png",
+    "instruction": "place the playing card on the wooden table surface",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__7276707702291042470__contradictory_instructions__move_the_bottle_without_interacting_with_it",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/7276707702291042470.png",
+    "instruction": "move the bottle without interacting with it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "Bridge__bridge_0134__missing_capability__tell_me_if_the_tool_handle_feels_soft",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0134.png",
+    "instruction": "tell me if the tool handle feels soft",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "RoboVQA__1991513587902585106__underspecified_intent__pick_it_up",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/1991513587902585106.png",
+    "instruction": "pick it up",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "EgoThink__localization_spatial_008__underspecified_intent__give_it_to_me",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_spatial_008.jpg",
+    "instruction": "give it to me",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Robo2VLM__16__contradictory_instructions__hand_me_the_clamp_without_holding_it",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/16.png",
+    "instruction": "hand me the clamp without holding it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "Robo2VLM__7__false_premise__open_the_small_container",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/7.png",
+    "instruction": "open the small container",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "Bridge__bridge_0184__missing_referent__set_the_notebook_on_the_workbench_floor_area",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0184.png",
+    "instruction": "set the notebook on the workbench floor area",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "EgoThink__object_attribute_008__missing_referent__bring_me_the_sticky_note",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Object_attribute_008.jpg",
+    "instruction": "bring me the sticky note",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__100_fractal20220817_data_close_bottom_drawer_2381_q6__false_premise__turn_off_the_calculator",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/100-fractal20220817_data_close_bottom_drawer_2381_q6.png",
+    "instruction": "turn off the calculator",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "EgoThink__localization_location_004__subjective_intent__place_the_bottle_i_prefer_on_the_sink_counter_edge",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_location_004.jpg",
+    "instruction": "place the bottle I prefer on the sink counter edge",
+    "type": "subjective_intent"
+  },
+  {
+    "unique_id": "RoboVQA__100028975187255293__missing_capability__check_if_the_candy_tray_has_an_odor",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/100028975187255293.png",
+    "instruction": "check if the candy tray has an odor",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "RoboVQA__13342047480832332899__ambiguous_referent__bring_me_the_plastic_cup",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/13342047480832332899.png",
+    "instruction": "bring me the plastic cup",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "DROID__428_droid_ep28__ambiguous_referent__pick_up_the_small_book",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/428_droid_ep28.png",
+    "instruction": "pick up the small book",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__59_fractal20220817_data_place_blue_plastic_bottle_into_top_drawer_2750_q45__missing_referent__place_the_book_on_the_table_top_surface",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/59-fractal20220817_data_place_blue_plastic_bottle_into_top_drawer_2750_q45.png",
+    "instruction": "place the book on the table top surface",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__167_fractal20220817_data_place_redbull_can_upright_1167_q35__contradictory_instructions__move_the_snack_bag_without_interacting_with_it",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/167-fractal20220817_data_place_redbull_can_upright_1167_q35.png",
+    "instruction": "move the snack bag without interacting with it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "Robo2VLM__114_fractal20220817_data_pick_pepsi_can_from_middle_drawer_and_place_on_counter_112__missing_referent__move_the_candle",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/114-fractal20220817_data_pick_pepsi_can_from_middle_drawer_and_place_on_counter_112_.png",
+    "instruction": "move the candle",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__235_droid_pick_up_the_objects_from_the_table_and_put_them_in_the_plastic_bag_8822_q1__false_premise__open_the_cardboard_box",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/235-droid_pick_up_the_objects_from_the_table_and_put_them_in_the_plastic_bag_8822_q1.png",
+    "instruction": "open the cardboard box",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__66_frame_84__missing_referent__put_the_book_on_the_table_top_surface",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/66_frame_84.png",
+    "instruction": "put the book on the table top surface",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0112__underspecified_intent__set_the_cup_down_there",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0112.png",
+    "instruction": "set the cup down there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Robo2VLM__52_fractal20220817_data_place_blue_plastic_bottle_into_middle_drawer_4454_q2__missing_capability__check_if_the_bottle_has_an_odor",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/52-fractal20220817_data_place_blue_plastic_bottle_into_middle_drawer_4454_q2.png",
+    "instruction": "check if the bottle has an odor",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0025__missing_capability__tell_me_whether_the_washing_machine_is_ringing",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0025.png",
+    "instruction": "tell me whether the washing machine is ringing",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0170__contradictory_instructions__close_the_cardboard_box_while_keeping_it_open",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0170.png",
+    "instruction": "close the cardboard box while keeping it open",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "RoboVQA__6066417212949945445__missing_referent__take_the_potted_plant",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/6066417212949945445.png",
+    "instruction": "take the potted plant",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "EgoThink__reasoning_comparing_003__subjective_intent__place_the_bowl_i_prefer_on_the_left_cabinet_lower_shelf",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Reasoning_comparing_003.jpg",
+    "instruction": "place the bowl I prefer on the left cabinet lower shelf",
+    "type": "subjective_intent"
+  },
+  {
+    "unique_id": "RoboVQA__485651218132332232__physical_infeasibility__put_the_glass_jar_into_the_glass_jar_interior",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/485651218132332232.png",
+    "instruction": "put the glass jar into the glass jar interior",
+    "type": "physical_infeasibility"
+  },
+  {
+    "unique_id": "RoboVQA__1660661454900717705__false_premise__close_the_drawer_unit",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/1660661454900717705.png",
+    "instruction": "close the drawer unit",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "RoboVQA__11512762318768749044__false_premise__close_the_refrigerator",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/11512762318768749044.png",
+    "instruction": "close the refrigerator",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "Bridge__bridge_0002__missing_referent__pick_up_the_sticky_note",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0002.png",
+    "instruction": "pick up the sticky note",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__100032856389576264__missing_referent__hand_me_the_sponge",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/100032856389576264.png",
+    "instruction": "hand me the sponge",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__193_fractal20220817_data_place_green_jalapeno_chip_bag_into_middle_drawer_2953_q8__false_premise__empty_the_bowl",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/193-fractal20220817_data_place_green_jalapeno_chip_bag_into_middle_drawer_2953_q8.png",
+    "instruction": "empty the bowl",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "EgoThink__localization_spatial_013__underspecified_intent__place_that_here",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_spatial_013.jpg",
+    "instruction": "place that here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "DROID__488_droid_ep88__false_premise__close_the_cabinet",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/488_droid_ep88.png",
+    "instruction": "close the cabinet",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "RoboVQA__7351592957626278938__ambiguous_referent__put_the_chip_bag_on_the_wooden_table_surface",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/7351592957626278938.png",
+    "instruction": "put the chip bag on the wooden table surface",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "EgoThink__localization_location_020__missing_referent__empty_the_coffee_mug",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_location_020.jpg",
+    "instruction": "empty the coffee mug",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__4108782820903967321__underspecified_intent__set_it_on_the_white_table_surface",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/4108782820903967321.png",
+    "instruction": "set it on the white table surface",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0114__missing_referent__bring_me_the_rubber_band",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0114.png",
+    "instruction": "bring me the rubber band",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "DROID__407_droid_ep7__missing_capability__tell_me_whether_the_microwave_is_humming",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/407_droid_ep7.png",
+    "instruction": "tell me whether the microwave is humming",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Robo2VLM__82_fractal20220817_data_open_bottom_drawer_4188_q65__contradictory_instructions__hand_me_the_cardboard_box_without_holding_it",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/82-fractal20220817_data_open_bottom_drawer_4188_q65.png",
+    "instruction": "hand me the cardboard box without holding it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "DROID__452_droid_ep52__false_premise__close_the_cabinet",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/452_droid_ep52.png",
+    "instruction": "close the cabinet",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__47_frame_06__missing_capability__tell_me_whether_the_cup_is_still_warm",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/47_frame_06.png",
+    "instruction": "tell me whether the cup is still warm",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "DROID__15_frame_02__missing_referent__fill_the_coffee_mug",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/15_frame_02.png",
+    "instruction": "fill the coffee mug",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__44__false_premise__close_the_microwave",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/44.png",
+    "instruction": "close the microwave",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "Robo2VLM__122_fractal20220817_data_pick_pepsi_can_1158_q9__missing_capability__tell_me_whether_the_soda_can_is_humming",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/122-fractal20220817_data_pick_pepsi_can_1158_q9.png",
+    "instruction": "tell me whether the soda can is humming",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0167__missing_capability__check_whether_the_washing_machine_has_cooled_down",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0167.png",
+    "instruction": "check whether the washing machine has cooled down",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Bridge__bridge_0146__contradictory_instructions__move_the_screwdriver_to_the_wooden_workbench_while_leaving_it_on_the_workbench_top_surface",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0146.png",
+    "instruction": "move the screwdriver to the wooden workbench while leaving it on the workbench top surface",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "EgoThink__localization_location_010__missing_capability__check_if_the_pear_has_an_odor",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_location_010.jpg",
+    "instruction": "check if the pear has an odor",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Robo2VLM__215_fractal20220817_data_close_middle_drawer_3252_q9__missing_capability__check_whether_the_apple_smells_bad",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/215-fractal20220817_data_close_middle_drawer_3252_q9.png",
+    "instruction": "check whether the apple smells bad",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Robo2VLM__187_fractal20220817_data_pick_blue_plastic_bottle_from_top_drawer_and_place_on_count__false_premise__open_the_drawer",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/187-fractal20220817_data_pick_blue_plastic_bottle_from_top_drawer_and_place_on_count.png",
+    "instruction": "open the drawer",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "Bridge__bridge_0199__missing_referent__grab_the_coffee_mug",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0199.png",
+    "instruction": "grab the coffee mug",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "EgoThink__activity_133__missing_capability__move_the_coffee_cup_only_if_it_has_cooled_down",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Activity_133.jpg",
+    "instruction": "move the coffee cup only if it has cooled down",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "Robo2VLM__56_fractal20220817_data_place_blue_plastic_bottle_into_top_drawer_1955_q33__false_premise__close_the_bottle",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/56-fractal20220817_data_place_blue_plastic_bottle_into_top_drawer_1955_q33.png",
+    "instruction": "close the bottle",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "EgoThink__activity_015__missing_referent__pass_me_the_television_remote",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Activity_015.jpg",
+    "instruction": "pass me the television remote",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__4402635555250905038__underspecified_intent__give_it_to_me",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/4402635555250905038.png",
+    "instruction": "give it to me",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0229__ambiguous_referent__pick_up_the_small_stuffed_animal",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0229.png",
+    "instruction": "pick up the small stuffed animal",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__50__missing_capability__tell_me_whether_the_monitor_is_humming",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/50.png",
+    "instruction": "tell me whether the monitor is humming",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "EgoThink__localization_spatial_013__contradictory_instructions__open_the_canister_while_keeping_it_closed",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_spatial_013.jpg",
+    "instruction": "open the canister while keeping it closed",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "Robo2VLM__40__contradictory_instructions__move_the_pan_without_interacting_with_it",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/40.png",
+    "instruction": "move the pan without interacting with it",
+    "type": "contradictory_instructions"
+  },
+  {
+    "unique_id": "DROID__425_droid_ep25__underspecified_intent__set_that_on_the_upper_kitchen_cabinet",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/425_droid_ep25.png",
+    "instruction": "set that on the upper kitchen cabinet",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "RoboVQA__10002010807733612688__missing_referent__pick_up_the_silver_scissors",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10002010807733612688.png",
+    "instruction": "pick up the silver scissors",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__50__missing_referent__give_me_the_water_bottle",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/50.png",
+    "instruction": "give me the water bottle",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__10000435043764988037__false_premise__open_the_table_power_module",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10000435043764988037.png",
+    "instruction": "open the table power module",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "EgoThink__activity_008__underspecified_intent__set_it_on_the_main_kitchen_countertop",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Activity_008.jpg",
+    "instruction": "set it on the main kitchen countertop",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Robo2VLM__117_fractal20220817_data_pick_pepsi_can_from_middle_drawer_and_place_on_counter_5537__underspecified_intent__bring_the_can_here",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/117-fractal20220817_data_pick_pepsi_can_from_middle_drawer_and_place_on_counter_5537.png",
+    "instruction": "bring the can here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0167__underspecified_intent__put_it_there",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0167.png",
+    "instruction": "put it there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "RoboVQA__10001443128057033086__missing_capability__check_whether_the_cardboard_box_feels_heavy",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10001443128057033086.png",
+    "instruction": "check whether the cardboard box feels heavy",
+    "type": "missing_capability"
+  },
+  {
+    "unique_id": "EgoThink__planning_assistance_019__underspecified_intent__place_that_here",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Planning_assistance_019.jpg",
+    "instruction": "place that here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "EgoThink__localization_location_006__ambiguous_referent__grab_the_cloth",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Localization_location_006.jpg",
+    "instruction": "grab the cloth",
+    "type": "ambiguous_referent"
+  },
+  {
+    "unique_id": "Robo2VLM__94_fractal20220817_data_pick_orange_from_bottom_drawer_and_place_on_counter_3516_q7__false_premise__open_the_drawer_unit",
+    "benchmark": "Robo2VLM",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Robo2VLM/images/94-fractal20220817_data_pick_orange_from_bottom_drawer_and_place_on_counter_3516_q7.png",
+    "instruction": "open the drawer unit",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__485_droid_ep85__subjective_intent__hand_me_the_ugliest_cup",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/485_droid_ep85.png",
+    "instruction": "hand me the ugliest cup",
+    "type": "subjective_intent"
+  },
+  {
+    "unique_id": "EgoThink__activity_013__underspecified_intent__place_that_here",
+    "benchmark": "EgoThink",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/EgoThink/images/Activity_013.jpg",
+    "instruction": "place that here",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "DROID__34_frame_00__false_premise__open_the_cup",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/34_frame_00.png",
+    "instruction": "open the cup",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__402_droid_ep2__false_premise__open_the_cardboard_box",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/402_droid_ep2.png",
+    "instruction": "open the cardboard box",
+    "type": "false_premise"
+  },
+  {
+    "unique_id": "DROID__38_frame_05__underspecified_intent__place_the_duvet_over_there",
+    "benchmark": "DROID",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/DROID/images/38_frame_05.png",
+    "instruction": "place the duvet over there",
+    "type": "underspecified_intent"
+  },
+  {
+    "unique_id": "Bridge__bridge_0061__missing_referent__hand_me_the_laptop",
+    "benchmark": "Bridge",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/Bridge/images/bridge_0061.png",
+    "instruction": "hand me the laptop",
+    "type": "missing_referent"
+  },
+  {
+    "unique_id": "RoboVQA__10003476239865748012__missing_capability__check_if_the_monitor_is_beeping",
+    "benchmark": "RoboVQA",
+    "image_path": "/home/ubuntu/Robo-Abstention/data/RoboVQA/images/10003476239865748012.png",
+    "instruction": "check if the monitor is beeping",
+    "type": "missing_capability"
+  }
+]

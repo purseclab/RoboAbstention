@@ -44,12 +44,39 @@
         </div>
         <p class="author-note"><sup>*</sup>Equal contribution &middot; <sup>&dagger;</sup>Work performed while an intern at Purdue University</p>
         <div class="actions" aria-label="Project links">
-          <a class="button button--primary" href="#" aria-label="arXiv link placeholder">arXiv</a>
-          <a class="button button--primary" href="#" aria-label="Dataset link placeholder">Dataset</a>
-          <a class="button button--primary" href="#" aria-label="Code link placeholder">Code</a>
+          <a class="button button--primary" href="#" aria-label="arXiv link placeholder">
+            <img class="button__icon" src="https://cdn.simpleicons.org/arxiv/FFFAF0" alt="" aria-hidden="true">
+            <span>arXiv</span>
+          </a>
+          <a class="button button--primary" href="#" aria-label="Dataset link placeholder">
+            <img class="button__icon" src="https://cdn.simpleicons.org/huggingface/FFFAF0" alt="" aria-hidden="true">
+            <span>Dataset</span>
+          </a>
+          <a class="button button--primary" href="#" aria-label="Code link placeholder">
+            <img class="button__icon" src="https://cdn.simpleicons.org/github/FFFAF0" alt="" aria-hidden="true">
+            <span>Code</span>
+          </a>
           <a class="button button--ghost" href="#examples">View Examples</a>
           <a class="button button--ghost" href="#cite">BibTeX</a>
         </div>
+        <dl class="benchmark-stats" aria-label="Benchmark statistics">
+          <div>
+            <dt>Images</dt>
+            <dd>1,250</dd>
+          </div>
+          <div>
+            <dt>Subsets</dt>
+            <dd>5</dd>
+          </div>
+          <div>
+            <dt>Released Instructions</dt>
+            <dd>6,069</dd>
+          </div>
+          <div>
+            <dt>Abstention Categories</dt>
+            <dd>8</dd>
+          </div>
+        </dl>
       </section>
 
       <section class="abstract-section" aria-labelledby="abstract-heading">
@@ -86,6 +113,24 @@
         </details>
       </section>
 
+      <section class="summary" aria-labelledby="abstention-scope">
+        <div class="section-heading">
+          <h2 id="abstention-scope">Abstention Beyond Unsafe Requests</h2>
+          <span>Motivation</span>
+        </div>
+        <div class="summary__body">
+          <p>
+            Robots should not abstain only when users issue malicious instructions or attempt jailbreaks. Even benign requests can be
+            impossible to execute reliably when the instruction is ambiguous, underspecified, subjective, based on a false premise,
+            physically infeasible, contradictory, or outside the robot's sensing and actuation capabilities.
+          </p>
+          <p>
+            RoboAbstention focuses on this embodied setting: cases where the right behavior is to ask for clarification, acknowledge
+            uncertainty, or decline to act because the scene and robot capabilities do not support a confident plan.
+          </p>
+        </div>
+      </section>
+
       <section class="figure-section" aria-labelledby="system-overview">
         <div class="section-heading">
           <h2 id="system-overview">A Three-Phase Pipeline for Visually Grounded Abstention Instructions</h2>
@@ -94,28 +139,17 @@
         <figure class="system-card">
           <img src="assets/images/system_figure.png" alt="Overview of the RoboAbstention dataset creation and evaluation pipeline">
           <figcaption>
-            The benchmark instantiates eight abstention categories from embodied robotics images using structured visual grounding,
-            deterministic constraint derivation, and controlled instruction generation.
+            We introduce a taxonomy of eight abstention categories for embodied settings, covering missing or ambiguous referents,
+            underspecified or subjective intent, false premises, physical infeasibility, missing capability, and logical
+            contradictions. Building on this taxonomy, our framework instantiates abstention cases over real-world robotics images
+            through a three-stage pipeline: structured visual grounding with a VLM, deterministic constraint derivation over the
+            extracted scene representation, and controlled instruction generation with category-specific templates. This process
+            yields a benchmark of 1,250 images from five embodied robotics datasets, paired with instructions that should elicit
+            abstention across multiple categories. We use the benchmark to evaluate frontier robotic and general-purpose VLMs,
+            analyze performance across categories, model scales, and reasoning capabilities, and study mitigation strategies such
+            as in-context learning and defensive prompting.
           </figcaption>
         </figure>
-      </section>
-
-      <section class="summary">
-        <article>
-          <h2>Why Abstention?</h2>
-          <p>
-            Robots should not blindly execute instructions when the request is ambiguous, impossible, based on a false premise,
-            underspecified, preference-dependent, contradictory, or outside the robot's capabilities. This project evaluates when
-            VLM planners ask for clarification or acknowledge uncertainty instead of acting as yes-men.
-          </p>
-        </article>
-        <article>
-          <h2>Benchmark Scope</h2>
-          <p>
-            The benchmark focuses on benign embodied instructions that require abstention because the visual scene or robot
-            capabilities make execution unresolved. It is distinct from refusal settings such as jailbreaks or unsafe requests.
-          </p>
-        </article>
       </section>
 
       <section id="examples" class="examples" aria-labelledby="examples-heading">
