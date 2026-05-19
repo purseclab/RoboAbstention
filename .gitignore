@@ -37,11 +37,7 @@ dist/
 
 # Generated datasets, results, and scratch outputs
 data/
-data_orig/
-data_sample/
 output/
-results_template/
-results_typed_grammar/
 archive/
 
 # Local environment files
