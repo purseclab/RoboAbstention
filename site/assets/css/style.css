@@ -202,7 +202,7 @@ h1 {
 
 .abstract-card summary span {
   font-family: "Fraunces", serif;
-  font-size: clamp(1.45rem, 2.6vw, 2.3rem);
+  font-size: clamp(1.32rem, 2.25vw, 2rem);
   font-weight: 780;
   letter-spacing: -0.035em;
 }
@@ -265,7 +265,7 @@ h1 {
 .section-heading h2,
 .summary h2 {
   font-family: "Fraunces", serif;
-  font-size: clamp(1.7rem, 3.2vw, 3rem);
+  font-size: clamp(1.52rem, 2.75vw, 2.55rem);
   letter-spacing: -0.035em;
 }
 
@@ -471,11 +471,12 @@ h1 {
 .funding-note {
   max-width: 980px;
   margin: 0 auto;
-  padding: 8px 0 72px;
+  padding: 34px 0 72px;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.65;
-  text-align: center;
+  text-align: left;
 }
 
 .funding-note p {

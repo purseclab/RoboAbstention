@@ -27,3 +27,9 @@ The website source lives in `site/`:
 - `site/assets/`
 
 GitHub Pages is configured to build from `site/` and publish the generated `_site` artifact. The workflow must stay at the repository root under `.github/workflows/`; workflows inside `site/.github/` are not discovered by GitHub Actions.
+
+## License
+
+Code in this repository is released under the MIT License. See `LICENSE`.
+
+The RoboAbstention dataset is released under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See `DATA_LICENSE`.
