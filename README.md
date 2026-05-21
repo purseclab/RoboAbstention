@@ -2,6 +2,8 @@
 
 This repository contains the code and project website for **The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents**.
 
+- Project website: [https://purseclab.github.io/benchmark-for-robotics-security/](https://purseclab.github.io/RoboAbstention/)
+
 ## Repository Layout
 
 - `src/` contains the benchmark generation and evaluation code.
