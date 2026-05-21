@@ -39,6 +39,7 @@ Current preprint citation:
   journal={arXiv preprint arXiv:2605.20544},
   year={2026}
 }
+```
 
 ## License
 
