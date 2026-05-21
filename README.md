@@ -28,6 +28,18 @@ The website source lives in `site/`:
 
 GitHub Pages is configured to build from `site/` and publish the generated `_site` artifact. The workflow must stay at the repository root under `.github/workflows/`; workflows inside `site/.github/` are not discovered by GitHub Actions.
 
+## Citation
+
+Current preprint citation:
+
+```bibtex
+@article{yeke2026roboabstention,
+  title={The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents},
+  author={Doguhan Yeke and Elif Su Temirel and Ananth Shreekumar and Brandon Lee and Dongyan Xu and Z Berkay Celik},
+  journal={arXiv preprint arXiv:2605.20544},
+  year={2026}
+}
+
 ## License
 
 Code in this repository is released under the MIT License. See `LICENSE`.
