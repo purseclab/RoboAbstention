@@ -60,3 +60,6 @@ Thumbs.db
 *.log
 *.tmp
 *.temp
+
+arxiv/
+slides/

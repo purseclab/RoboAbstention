@@ -59,6 +59,7 @@
             <span>Code</span>
           </a>
           <a class="button button--ghost" href="#examples">View Examples</a>
+          <a class="button button--ghost" href="#results">View Results</a>
           <a class="button button--ghost" href="#cite">BibTeX</a>
         </div>
         <dl class="benchmark-stats" aria-label="Benchmark statistics">
@@ -153,7 +154,6 @@
           </figcaption>
         </figure>
       </section>
-
       <section id="examples" class="examples" aria-labelledby="examples-heading">
         <div class="section-heading">
           <h2 id="examples-heading">Representative Abstention Scenarios</h2>
@@ -223,6 +223,187 @@
               <p class="tag"><span>Contradictory</span></p>
             </div>
           </article>
+        </div>
+      </section>
+      <section id="results" class="results" aria-labelledby="results-heading">
+        <div class="section-heading">
+          <h2 id="results-heading">Frontier VLMs Rarely Abstain When They Should</h2>
+          <span>Results</span>
+        </div>
+        <div class="results-card">
+          <div class="results-card__intro">
+            <p>
+              Across 6,069 abstention-worthy image-instruction pairs, the best-performing frontier VLM abstains on only
+              39.0% of tasks. Ambiguous referent cases are especially difficult: models usually choose a plausible target
+              rather than ask for clarification.
+            </p>
+          </div>
+          <figure class="results-figure">
+            <img src="assets/images/frontier_vlm.png" alt="Frontier VLM abstention counts on the RoboAbstention benchmark">
+            <figcaption>
+              Frontier model abstention counts on the RoboAbstention benchmark.
+            </figcaption>
+          </figure>
+          <div class="results-table-wrap" role="region" aria-label="Fine-grained abstention counts table" tabindex="0">
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th rowspan="2" scope="col">Model</th>
+                  <th colspan="4" scope="colgroup">Reference Grounding</th>
+                  <th colspan="3" scope="colgroup">Execution Feasibility</th>
+                  <th rowspan="2" scope="col">False Premise<br><span>(957)</span></th>
+                  <th rowspan="2" scope="col">Overall<br><span>(6069)</span></th>
+                </tr>
+                <tr>
+                  <th scope="col">Missing Referent<br><span>(1250)</span></th>
+                  <th scope="col">Ambiguous Referent<br><span>(420)</span></th>
+                  <th scope="col">Subjective Intent<br><span>(242)</span></th>
+                  <th scope="col">Underspecified Intent<br><span>(1246)</span></th>
+                  <th scope="col">Physical Infeasibility<br><span>(50)</span></th>
+                  <th scope="col">Missing Capability<br><span>(1067)</span></th>
+                  <th scope="col">Contradictory<br><span>(837)</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">GPT-5.4</th>
+                  <td>130<br><span>10.4%</span></td>
+                  <td>0<br><span>0.0%</span></td>
+                  <td>41<br><span>16.9%</span></td>
+                  <td>240<br><span>19.3%</span></td>
+                  <td>1<br><span>2.0%</span></td>
+                  <td>91<br><span>8.5%</span></td>
+                  <td>243<br><span>29.0%</span></td>
+                  <td>34<br><span>3.6%</span></td>
+                  <td><strong>780</strong><br><span>12.9%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Claude Sonnet 4.6</th>
+                  <td>742<br><span>59.4%</span></td>
+                  <td>10<br><span>2.4%</span></td>
+                  <td>74<br><span>30.6%</span></td>
+                  <td>295<br><span>23.7%</span></td>
+                  <td>2<br><span>4.0%</span></td>
+                  <td>191<br><span>17.9%</span></td>
+                  <td>222<br><span>26.5%</span></td>
+                  <td>69<br><span>7.2%</span></td>
+                  <td><strong>1605</strong><br><span>26.4%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gemini ER 1.6</th>
+                  <td>396<br><span>31.7%</span></td>
+                  <td>8<br><span>1.9%</span></td>
+                  <td>146<br><span>60.3%</span></td>
+                  <td>33<br><span>2.6%</span></td>
+                  <td>3<br><span>6.0%</span></td>
+                  <td>209<br><span>19.6%</span></td>
+                  <td>139<br><span>16.6%</span></td>
+                  <td>67<br><span>7.0%</span></td>
+                  <td><strong>1001</strong><br><span>16.5%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gemini 2.5 Flash</th>
+                  <td>940<br><span>75.2%</span></td>
+                  <td>25<br><span>6.0%</span></td>
+                  <td>77<br><span>31.8%</span></td>
+                  <td>255<br><span>20.5%</span></td>
+                  <td>13<br><span>26.0%</span></td>
+                  <td>478<br><span>44.8%</span></td>
+                  <td>304<br><span>36.3%</span></td>
+                  <td>273<br><span>28.5%</span></td>
+                  <td><strong>2365</strong><br><span>39.0%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Qwen 3.5 27B</th>
+                  <td>290<br><span>23.2%</span></td>
+                  <td>6<br><span>1.4%</span></td>
+                  <td>13<br><span>5.4%</span></td>
+                  <td>23<br><span>1.8%</span></td>
+                  <td>5<br><span>10.0%</span></td>
+                  <td>101<br><span>9.5%</span></td>
+                  <td>45<br><span>5.4%</span></td>
+                  <td>73<br><span>7.6%</span></td>
+                  <td><strong>556</strong><br><span>9.2%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Llama 4 Maverick</th>
+                  <td>596<br><span>47.7%</span></td>
+                  <td>16<br><span>3.8%</span></td>
+                  <td>12<br><span>5.0%</span></td>
+                  <td>50<br><span>4.0%</span></td>
+                  <td>4<br><span>8.0%</span></td>
+                  <td>77<br><span>7.2%</span></td>
+                  <td>239<br><span>28.6%</span></td>
+                  <td>148<br><span>15.5%</span></td>
+                  <td><strong>1142</strong><br><span>18.8%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4 Mini (none)</th>
+                  <td>159<br><span>12.7%</span></td>
+                  <td>2<br><span>0.5%</span></td>
+                  <td>39<br><span>16.1%</span></td>
+                  <td>221<br><span>17.7%</span></td>
+                  <td>0<br><span>0.0%</span></td>
+                  <td>273<br><span>25.6%</span></td>
+                  <td>141<br><span>16.8%</span></td>
+                  <td>29<br><span>3.0%</span></td>
+                  <td><strong>864</strong><br><span>14.2%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4 Mini (low)</th>
+                  <td>118<br><span>9.4%</span></td>
+                  <td>3<br><span>0.7%</span></td>
+                  <td>24<br><span>9.9%</span></td>
+                  <td>102<br><span>8.2%</span></td>
+                  <td>2<br><span>4.0%</span></td>
+                  <td>436<br><span>40.9%</span></td>
+                  <td>184<br><span>22.0%</span></td>
+                  <td>30<br><span>3.1%</span></td>
+                  <td><strong>899</strong><br><span>14.8%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4 Mini (medium)</th>
+                  <td>87<br><span>7.0%</span></td>
+                  <td>3<br><span>0.7%</span></td>
+                  <td>18<br><span>7.4%</span></td>
+                  <td>74<br><span>5.9%</span></td>
+                  <td>2<br><span>4.0%</span></td>
+                  <td>321<br><span>30.1%</span></td>
+                  <td>172<br><span>20.5%</span></td>
+                  <td>28<br><span>2.9%</span></td>
+                  <td><strong>705</strong><br><span>11.6%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4 Mini (high)</th>
+                  <td>57<br><span>4.6%</span></td>
+                  <td>7<br><span>1.7%</span></td>
+                  <td>25<br><span>10.3%</span></td>
+                  <td>63<br><span>5.1%</span></td>
+                  <td>4<br><span>8.0%</span></td>
+                  <td>264<br><span>24.7%</span></td>
+                  <td>144<br><span>17.2%</span></td>
+                  <td>33<br><span>3.4%</span></td>
+                  <td><strong>597</strong><br><span>9.8%</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4 Nano</th>
+                  <td>123<br><span>9.8%</span></td>
+                  <td>3<br><span>0.7%</span></td>
+                  <td>9<br><span>3.7%</span></td>
+                  <td>244<br><span>19.6%</span></td>
+                  <td>1<br><span>2.0%</span></td>
+                  <td>176<br><span>16.5%</span></td>
+                  <td>189<br><span>22.6%</span></td>
+                  <td>14<br><span>1.5%</span></td>
+                  <td><strong>759</strong><br><span>12.5%</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="results-table-caption">
+              Fine-grained abstention counts for all evaluated models. Each cell reports the count and rate of instructions
+              on which the model abstained.
+            </p>
+          </div>
         </div>
       </section>
 
