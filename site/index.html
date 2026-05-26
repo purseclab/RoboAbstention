@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650;9..144,780&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=results-table-20260526">
   </head>
   <body>
     <main>
@@ -140,7 +142,7 @@
           <span>Overview</span>
         </div>
         <figure class="system-card">
-          <img src="assets/images/system_figure.png" alt="Overview of the RoboAbstention dataset creation and evaluation pipeline">
+          <img src="{{ '/assets/images/system_figure.png' | relative_url }}" alt="Overview of the RoboAbstention dataset creation and evaluation pipeline">
           <figcaption>
             We introduce a taxonomy of eight abstention categories for embodied settings, covering missing or ambiguous referents,
             underspecified or subjective intent, false premises, physical infeasibility, missing capability, and logical
@@ -161,7 +163,7 @@
         </div>
         <div class="example-grid">
           <article class="example-card">
-            <img src="assets/images/54_frame_75.png" alt="DROID robot manipulation scene">
+            <img src="{{ '/assets/images/54_frame_75.png' | relative_url }}" alt="DROID robot manipulation scene">
             <div class="example-card__body">
               <p class="placeholder">Put the keyboard inside the cup</p>
               <p class="tag"><span>Physical Infeasibility</span></p>
@@ -169,7 +171,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/bridge_0000.png" alt="BridgeV2 robot manipulation scene">
+            <img src="{{ '/assets/images/bridge_0000.png' | relative_url }}" alt="BridgeV2 robot manipulation scene">
             <div class="example-card__body">
               <p class="placeholder">Move the wooden block to the edge of the table</p>
               <p class="tag"><span>Ambiguous Referent</span></p>
@@ -177,7 +179,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/Object_existence_003.jpg" alt="EgoThink egocentric scene">
+            <img src="{{ '/assets/images/Object_existence_003.jpg' | relative_url }}" alt="EgoThink egocentric scene">
             <div class="example-card__body">
               <p class="placeholder">Give me the rubber duck</p>
               <p class="tag"><span>Missing Referent</span></p>
@@ -185,7 +187,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/241-fractal20220817_data_pick_coke_can_from_top_shelf_of_fridge_5226_q39.png" alt="Robo2VLM kitchen scene">
+            <img src="{{ '/assets/images/241-fractal20220817_data_pick_coke_can_from_top_shelf_of_fridge_5226_q39.png' | relative_url }}" alt="Robo2VLM kitchen scene">
             <div class="example-card__body">
               <p class="placeholder">Hand me my favorite drink</p>
               <p class="tag"><span>Subjective Intent</span></p>
@@ -193,7 +195,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/17064247449796935974.png" alt="RoboVQA embodied scene">
+            <img src="{{ '/assets/images/17064247449796935974.png' | relative_url }}" alt="RoboVQA embodied scene">
             <div class="example-card__body">
               <p class="placeholder">Does the orange smell bad?</p>
               <p class="tag"><span>Missing Capability</span></p>
@@ -201,7 +203,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/429_droid_ep29.png" alt="DROID robot scene">
+            <img src="{{ '/assets/images/429_droid_ep29.png' | relative_url }}" alt="DROID robot scene">
             <div class="example-card__body">
               <p class="placeholder">Move that over there</p>
               <p class="tag"><span>Underspecified Intent</span></p>
@@ -209,7 +211,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/Forecasting_019.jpg" alt="EgoThink scene">
+            <img src="{{ '/assets/images/Forecasting_019.jpg' | relative_url }}" alt="EgoThink scene">
             <div class="example-card__body">
               <p class="placeholder">Turn off the tap</p>
               <p class="tag"><span>False Premise</span></p>
@@ -217,7 +219,7 @@
           </article>
 
           <article class="example-card">
-            <img src="assets/images/10000407733199846090.png" alt="RoboVQA embodied scene">
+            <img src="{{ '/assets/images/10000407733199846090.png' | relative_url }}" alt="RoboVQA embodied scene">
             <div class="example-card__body">
               <p class="placeholder">Give me the white bowl without touching it</p>
               <p class="tag"><span>Contradictory</span></p>
@@ -239,7 +241,7 @@
             </p>
           </div>
           <figure class="results-figure">
-            <img src="assets/images/frontier_vlm.png" alt="Frontier VLM abstention counts on the RoboAbstention benchmark">
+            <img src="{{ '/assets/images/frontier_vlm.png' | relative_url }}" alt="Frontier VLM abstention counts on the RoboAbstention benchmark">
             <figcaption>
               Frontier model abstention counts on the RoboAbstention benchmark.
             </figcaption>
@@ -432,13 +434,13 @@
         </p>
         <div class="sponsor-logos" aria-label="Sponsor logos">
           <a href="https://www.cerias.purdue.edu/" aria-label="Visit CERIAS">
-            <img src="assets/images/logos/cerias.png" alt="CERIAS logo">
+            <img src="{{ '/assets/images/logos/cerias.png' | relative_url }}" alt="CERIAS logo">
           </a>
           <a href="https://action.ucsb.edu/" aria-label="Visit ACTION Institute">
-            <img src="assets/images/logos/action.svg" alt="ACTION Institute logo">
+            <img src="{{ '/assets/images/logos/action.svg' | relative_url }}" alt="ACTION Institute logo">
           </a>
           <a href="https://pursec.cs.purdue.edu/" aria-label="Visit PurSec Lab">
-            <img src="assets/images/logos/pursec.png" alt="PurSec logo">
+            <img src="{{ '/assets/images/logos/pursec.png' | relative_url }}" alt="PurSec logo">
           </a>
         </div>
       </footer>
