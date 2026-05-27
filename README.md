@@ -37,7 +37,7 @@ Current preprint citation:
 ```bibtex
 @article{yeke2026roboabstention,
   title={The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents},
-  author={Doguhan Yeke and Elif Su Temirel and Ananth Shreekumar and Brandon Lee and Dongyan Xu and Z Berkay Celik},
+  author={Doguhan Yeke and Elif Su Temirel and Ananth Shreekumar and Brandon Lee and Dongyan Xu and Z. Berkay Celik},
   journal={arXiv preprint arXiv:2605.20544},
   year={2026}
 }
